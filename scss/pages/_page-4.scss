@@ -1,0 +1,30 @@
+#page-4 {
+  background-color: #252934;
+  height: 200px;
+
+  h2 {
+    color: white;
+  }
+  
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 40%;
+    margin: auto;
+    grid-gap: 50px;
+    justify-content: center;
+    li {
+      list-style: none;
+      text-align: center;
+      i {
+        color: white;
+        font-size: 40pt;
+
+        &:hover{
+          color:  #04c2c9;
+          transition: 0.7s ease;
+        }
+      }
+    }
+  }
+}

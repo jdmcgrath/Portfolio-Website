@@ -1,0 +1,128 @@
+@import "./scss/components/buttons";
+@import "./scss/layout/nav";
+@import "./scss/base/typography";
+@import "./scss/layout/grid";
+@import "./scss/pages/page-1";
+@import "./scss/pages/page-2";
+@import "./scss/pages/page-3";
+@import "./scss/pages/page-4";
+@import "./scss/components/chart";
+
+/* Set font and reset margin & padding to be set */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  height: 100vh;
+}
+
+// Making the site responsive to viewport size
+
+@media (min-width: 560px) {
+  h1 {
+    font-size: 55px;
+  }
+  .highlight {
+    font-size: 65px;
+  }
+  .button {
+    font-size: 30px;
+  }
+  .column {
+    .dot {
+      height: 18vw;
+      width: 18vw;
+
+      i {
+        font-size: 10vw;
+      }
+    }
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .face{
+    height: 250px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 960px) {
+  h1 {
+    font-size: 65px;
+  }
+
+  .highlight {
+    font-size: 75px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 960px;
+  }
+  .column {
+    margin-bottom: 1vh;
+
+    .dot {
+      height: 115px;
+      width: 115px;
+
+      i {
+        font-size: 67px;
+      }
+    }
+    h3 {
+      font-size: 22px;
+      margin: 0.5vh 0 0.5vh 0;
+    }
+  }
+
+  .profile-flex {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    width: 960px;
+    margin-top: 75px;
+    margin-bottom: 100px;
+
+    h3 {
+      padding: 0.5vw;
+      font-size: 22px;
+    }
+  }
+
+  .profile {
+    grid-column-start: 1;
+  }
+
+  .skills {
+    grid-column-start: 2;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1300px) {
+  h1 {
+    font-size: 80px;
+  }
+  .highlight {
+    font-size: 90px;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

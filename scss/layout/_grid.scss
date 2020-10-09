@@ -1,0 +1,36 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  grid-gap: 20px;
+}
+
+.column {
+  margin-bottom: 3vh;
+
+  .dot {
+    height: 25vw;
+    width: 25vw;
+    background-image: linear-gradient(to right,(rgba(4,194,201,0.5)), rgba(227,27,109,0.7));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    i {
+      font-size: 15vw;
+      color: white;
+    }
+  }
+
+  h3 {
+    margin: 2vh 0 1vh 0;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
