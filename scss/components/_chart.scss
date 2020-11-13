@@ -1,10 +1,10 @@
 @mixin stagger-anim-delay($i, $initial-delay, $stagger-delay) {
-  @while $i > 0 {
-    &:nth-of-type(#{$i}) {
-      animation-delay: $initial-delay + $stagger-delay * $i;
-    }
-    $i: $i - 1;
-  }
+	@while $i > 0 {
+		&:nth-of-type(#{$i}) {
+			animation-delay: $initial-delay + $stagger-delay * $i;
+		}
+		$i: $i - 1;
+	}
 }
 
 $baseFontSize: 16px;
@@ -22,95 +22,95 @@ $chartBarHeight: 30px;
 $chartBarGap: 10px;
 
 .skills {
-  ul {
-    list-style: none;
-  }
-  li {
-    text-align: left;
-  }
-  margin: 20px 0 40px;
-  color: #282828;
+	ul {
+		list-style: none;
+	}
+	li {
+		text-align: left;
+	}
+	margin: 20px 0 40px;
+	color: #282828;
 
-  width: 90%;
-  height: $totalChartCount * ($chartBarHeight + $chartBarGap) +
-    ($chartCount * ($chartGap + $titleHeight));
-  margin: auto;
-  position: relative;
+	width: 90%;
+	height: $totalChartCount * ($chartBarHeight + $chartBarGap) +
+		($chartCount * ($chartGap + $titleHeight));
+	margin: auto;
+	position: relative;
 }
 
 .lines {
-  height: 100%;
-  position: relative;
+	height: 100%;
+	position: relative;
 }
 .line {
-  height: inherit;
-  width: 2px;
+	height: inherit;
+	width: 2px;
 
-  position: absolute;
+	position: absolute;
 
-  background: rgba(#eee, 0.6);
+	background: rgba(#eee, 0.6);
 
-  &.l--0 {
-    left: 0;
-  }
-  &.l--25 {
-    left: 25%;
-  }
-  &.l--50 {
-    left: 50%;
-  }
-  &.l--75 {
-    left: 75%;
-  }
-  &.l--100 {
-    left: calc(100% - 1px);
-  }
+	&.l--0 {
+		left: 0;
+	}
+	&.l--25 {
+		left: 25%;
+	}
+	&.l--50 {
+		left: 50%;
+	}
+	&.l--75 {
+		left: 75%;
+	}
+	&.l--100 {
+		left: calc(100% - 1px);
+	}
 }
 
 .charts {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
 }
 
 .chart--horiz {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .chart__bar {
-  $border-rad: 4px;
-  height: $chartBarHeight;
-  margin-bottom: $chartBarGap;
+	$border-rad: 4px;
+	height: $chartBarHeight;
+	margin-bottom: $chartBarGap;
 
-  background: linear-gradient(to right,(rgba(227,27,109,0.5)),(rgba(4,194,201,1)));
-  border-top-right-radius: $border-rad;
-  border-bottom-right-radius: $border-rad;
-  opacity: 0;
+	background: linear-gradient(to right, (rgba(227, 27, 109, 0.5)), (rgba(4, 194, 201, 1)));
+	border-top-right-radius: $border-rad;
+	border-bottom-right-radius: $border-rad;
+	opacity: 0;
 
-  animation: 1s anim-lightspeed-in ease forwards;
+	animation: 1s anim-lightspeed-in ease forwards;
 
-  .chart--dev & {
-    @include stagger-anim-delay($chartOneCount, 0.5s, 0.2s);
-  }
+	.chart--dev & {
+		@include stagger-anim-delay($chartOneCount, 0.5s, 0.2s);
+	}
 }
 
 .chart__label {
-  padding-left: 10px;
-  line-height: 30px;
-  color: white;
+	padding-left: 10px;
+	line-height: 30px;
+	color: white;
 }
 
 //Keyframes
 @keyframes anim-lightspeed-in {
-  0% {
-    transform: translateX(-200%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+	0% {
+		transform: translateX(-200%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }

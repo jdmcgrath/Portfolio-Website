@@ -1,121 +1,122 @@
 /* PROJECTS SECTION */
 .projects-section {
-  height: 1100px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  background-color: #f5f5f5;
-  height: auto;
-  
+	height: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	background-color: #f5f5f5;
+	height: auto;
 }
 
 .projects-container {
-  width: 90%;
-  margin: auto;
-  padding: 20px 20px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(1, 1fr);
-  justify-items: center;
+	width: 90%;
+	margin: auto;
+	padding: 20px 20px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(1, 1fr);
+	justify-items: center;
 }
 
-.face{
-  height: 250px;
-  width: 80vw;
+.face {
+	height: 250px;
+	width: 80vw;
 }
 
 .card_1 {
-  background-image: url(./img/thumb-1.jpg);
-  background-size: 100%;
-  border-radius: 20px 20px 0px 0px;
+	background-image: url(./img/thumb-1.jpg);
+	background-size: 100%;
+	border-radius: 20px 20px 0px 0px;
 }
 .card_2 {
-  background-image: url(./img/thumb-2.jpg);
-  background-size: 100%;
-  border-radius: 20px 20px 0px 0px;
+	background-image: url(./img/thumb-2.jpg);
+	background-size: 100%;
+	border-radius: 20px 20px 0px 0px;
 }
 
 .card_3 {
-  background-image: url(./img/thumb-3.jpg);
-  background-size: 100%;
-  border-radius: 20px 20px 0px 0px;
+	background-image: url(./img/thumb-3.jpg);
+	background-size: 100%;
+	border-radius: 20px 20px 0px 0px;
 }
 
 .card_4 {
-  background-image: url(./img/thumb-4.jpg);
-  background-size: 100%;
-  border-radius: 20px 20px 0px 0px;
+	background-image: url(./img/thumb-4.jpg);
+	background-size: 100%;
+	border-radius: 20px 20px 0px 0px;
 }
 
 .card_5 {
-  background-image: url(./img/thumb-5.jpg);
-  background-size: 100%;
-  border-radius: 20px 20px 0px 0px;
+	background-image: url(./img/thumb-5.jpg);
+	background-size: 100%;
+	border-radius: 20px 20px 0px 0px;
 }
 
 .card_6 {
-  background-image: url(./img/thumb-6.jpg);
-  background-size: 100%;
-  border-radius: 20px 20px 0px 0px;
+	background-image: url(./img/thumb-6.jpg);
+	background-size: 100%;
+	border-radius: 20px 20px 0px 0px;
 }
 
 .card_7 {
-  background-image: url(./img/thumb-7.jpg);
-  background-size: 100%;
-  border-radius: 20px 20px 0px 0px;
+	background-image: url(./img/thumb-7.jpg);
+	background-size: 100%;
+	border-radius: 20px 20px 0px 0px;
 }
 
 .card_8 {
-  background-image: url(./img/thumb-8.jpg);
-  background-size: 100%;
-  border-radius: 20px 20px 0px 0px;
+	background-image: url(./img/thumb-8.jpg);
+	background-size: 100%;
+	border-radius: 20px 20px 0px 0px;
 }
 
 .card_9 {
-  background-image: url(./img/thumb-9.jpg);
-  background-size: 100%;
-  border-radius: 20px 20px 0px 0px;
+	background-image: url(./img/thumb-9.jpg);
+	background-size: 100%;
+	border-radius: 20px 20px 0px 0px;
 }
 
 .card {
-  border-radius: 20px;
-  background-color: rgba(37,41,52,0.1);
+	border-radius: 20px;
+	background-color: rgba(37, 41, 52, 0.1);
 }
 
 .card-txt {
-  text-align: center;
-  height: 150px;
-  padding: 15px;
-  
-  p {
-      color: grey;
-      font-size: 20px;
-  }
+	text-align: center;
+	height: 150px;
+	padding: 15px;
+
+	p {
+		color: grey;
+		font-size: 20px;
+	}
 }
 .card-links {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  a {
-      height: 50px;
-      width: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      color: Black;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	a {
+		height: 50px;
+		width: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: Black;
 
-      &:hover {color: #e31b6d;
-      transition: 0.7s ease;}
-      i {
-          opacity: 1;
-          font-size: 40px;
-          &:hover {
-              font-size: 50px;
-              opacity: 1;
-          }
-      }
-  }
+		&:hover {
+			color: #e31b6d;
+			transition: 0.7s ease;
+		}
+		i {
+			opacity: 1;
+			font-size: 40px;
+			&:hover {
+				font-size: 50px;
+				opacity: 1;
+			}
+		}
+	}
 }
