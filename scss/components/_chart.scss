@@ -18,7 +18,7 @@ $totalChartCount: $chartOneCount;
 $titleGap: 10px;
 $titleHeight: $baseFontSize * $baseLineHeight + $titleGap;
 
-$chartBarHeight: 30px;
+$chartBarHeight: 40px;
 $chartBarGap: 10px;
 
 .skills {
@@ -27,6 +27,11 @@ $chartBarGap: 10px;
 	}
 	li {
 		text-align: left;
+	}
+	i {
+		font-size: 30px;
+		width: 50px;
+		padding-right: 20px;
 	}
 	margin: 20px 0 40px;
 	color: #282828;
@@ -85,7 +90,7 @@ $chartBarGap: 10px;
 	height: $chartBarHeight;
 	margin-bottom: $chartBarGap;
 
-	background: linear-gradient(to right, (rgba(227, 27, 109, 0.5)), (rgba(4, 194, 201, 1)));
+	background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 	border-top-right-radius: $border-rad;
 	border-bottom-right-radius: $border-rad;
 	opacity: 0;
@@ -99,8 +104,10 @@ $chartBarGap: 10px;
 
 .chart__label {
 	padding-left: 10px;
-	line-height: 30px;
+	line-height: 40px;
 	color: white;
+	display: flex;
+	align-items: center;
 }
 
 //Keyframes
