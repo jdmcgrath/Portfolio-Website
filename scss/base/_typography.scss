@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;800&display=swap');
 $primary-color: #e31b6d;
 $secondary-color: #04c2c9;
 
@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -31,5 +31,5 @@ h3 {
 	color: #e31b6d;
 	font-weight: 800;
 	font-size: 50px;
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
