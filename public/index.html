@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joseph McGrath - Software Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a6f8573d91.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script type="text/javascript" src="./JS/app.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Creating particles -->
+    <div id="particles-js"></div>
+    <header class="topnav">
+      <!-- Navigation links (hidden by default) -->
+      <nav id="myLinks">
+        <a class="links" href="#home">Home</a>
+        <a class="links" href="#about">About</a>
+        <a class="links" href="#work">Work</a>
+      </nav>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+
+    <!-- Page 1 -->
+    <section class="page-1 page" id="home">
+      <div id="welcome-message">
+        
+        <h1 id="app">
+          Hello, my name's <span class="highlight">Joe</span>.<br />I'm a Software Developer.
+        </h1>
+      </div>
+      <div id="welcome-button">
+        <a href="#about"
+          ><button class="button">
+            View my work <i class="fas fa-arrow-right"></i></button
+        ></a>
+      </div>
+      </div>
+    </section>
+
+    <!-- Page 2 -->
+    <section class="page-2" id="about">
+      <h2>ABOUT</h2>
+      <div class="grid-container">
+        <div class="column">
+          <span class="dot"><i class="fab fa-rev"></i></span>
+          <h3>Fast</h3>
+          <p>Fast load times and lag free interaction, my highest priority.</p>
+        </div>
+        <div class="column">
+          <span class="dot"><i class="fas fa-mobile-alt"></i></span>
+          <h3>Responsive</h3>
+          <p>My layouts will work on any device, big or small.</p>
+        </div>
+        <div class="column">
+          <span class="dot"><i class="far fa-lightbulb"></i></span>
+          <h3>Intuitive</h3>
+          <p>Strong preference for easy to use, intuitive UX/UI.</p>
+        </div>
+        <div class="column">
+          <span class="dot"><i class="fas fa-rocket"></i></span>
+          <h3>Dynamic</h3>
+          <p>
+            Websites don't have to be static, I love making pages come to life.
+          </p>
+        </div>
+      </div>
+      <div class="profile-flex">
+        <div class="profile">
+          <img
+            id="profile-picture"
+            src="./img/Me.jpg"
+            alt="An image of the developer"
+          />
+          <h3>Who's this guy?</h3>
+          <article>
+            I'm a Front-End Developer with a passion for UI effects, animations
+            and creating intuitive, dynamic user experiences. I'm a graduate
+            from _nology boot-camp.
+            <br />Let's make something special.
+          </article>
+        </div>
+        <div class="skills">
+          <ul class="lines">
+            <li class="line l--0"></li>
+            <li class="line l--25"></li>
+            <li class="line l--50"></li>
+            <li class="line l--75"></li>
+            <li class="line l--100"></li>
+          </ul>
+
+          <div class="charts">
+            <div class="chart chart--dev">
+              <ul class="chart--horiz">
+                <li class="chart__bar" style="width: 95%">
+                  <span class="chart__label"><i class="fab fa-react"></i> ReactJS</span>
+                </li>
+                <li class="chart__bar" style="width: 60%">
+                  <span class="chart__label"><i class="fab fa-angular"></i> AngularJS</span>
+                </li>
+                <li class="chart__bar" style="width: 85%">
+                  <span class="chart__label"><i class="fab fa-js-square"></i> JavaScript / TypeScript</span>
+                </li>
+                <li class="chart__bar" style="width: 95%">
+                  <span class="chart__label"><i class="fab fa-html5"></i> HTML5</span>
+                </li>
+                <li class="chart__bar" style="width: 95%">
+                  <span class="chart__label"><i class="fab fa-css3"></i> CSS3 & SCSS</span>
+                </li>
+                <li class="chart__bar" style="width: 75%">
+                  <span class="chart__label"><i class="fab fa-node-js"></i> NodeJS </span>
+                </li>
+                <li class="chart__bar" style="width: 50%">
+                  <span class="chart__label"><i class="fab fa-yarn"></i> Unit Testing </span>
+                </li>
+                <li class="chart__bar" style="width: 50%">
+                  <span class="chart__label"><i class="fab fa-uikit"></i> UI Design </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="project">
+      <h2>PROJECTS</h2>
+      <div class="projects-container">
+          <!-- 1 -->
+          <div class="card">
+              <div class="face face1 card_1">
+              </div>
+              <div class="face">
+                  <div class="card-txt">
+                    <h3>Dada App</h3>
+                    <p>Dada is an online parenting advice app made for dads. </p>
+                    <p class="langs">Languages / Frameworks used:</p>
+                    <p class="lang-icons">React | JavaScript | Sass | Firebase</p>
+                  </div>
+                  <div class="card-links">
+                      <a href="" target="_blank"><i class="fas fa-rocket"></i></a>
+                      <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                  </div>
+              </div>
+          </div>
+          <!-- 2 -->
+          <div class="card">
+            <div class="face face1 card_2">
+            </div>
+            <div class="face face2">
+                <div class="card-txt">
+                    <h3>Punk API</h3>
+                    <p>A React app to search and filter Brewdog's beers using the Punk API.</p>
+                    <p class="langs">Languages / Frameworks used:</p>
+                    <p class="lang-icons">React | JavaScript | Sass | APIs</p>
+                </div>
+                <div class="card-links">
+                    <a href="" target="_blank"><i class="fas fa-rocket"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+          <!-- 3 -->
+          <div class="card">
+            <div class="face face1 card_3">
+            </div>
+            <div class="face face2">
+                <div class="card-txt">
+                    <h3>Calculator</h3>
+                      <p>An online calculator built using vanilla JavaScript.</p>
+                      <p class="langs">Languages / Frameworks used:</p>
+                      <p class="lang-icons">JavaScript | HTML | Sass</p>
+                </div>
+                <div class="card-links">
+                    <a href="https://jdmcgrath.github.io/calculator/" target="_blank"><i class="fas fa-rocket"></i></a>
+                    <a href="https://github.com/jdmcgrath/calculator" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="card">
+            <div class="face face1 card_4">
+            </div>
+            <div class="face face2">
+                <div class="card-txt">
+                    <h3>Morse Code Translator</h3>
+                    <p>Responsive personal website completed for _Nology pre-course material.</p>
+                    <p class="langs">Languages / Frameworks used:</p>
+                    <p class="lang-icons">JavaScript | Sass</p>
+                </div>
+                <div class="card-links">
+                    <a href="https://jdmcgrath.github.io/morse-code-translator/" target="_blank"><i class="fas fa-rocket"></i></a>
+                    <a href="https://github.com/jdmcgrath/morse-code-translator" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="card">
+            <div class="face face1 card_5">
+            </div>
+            <div class="face face2">
+                <div class="card-txt">
+                    <h3>All Jumbled Up</h3>
+                    <p>Responsive personal website completed for _Nology pre-course material.</p>
+                    <p class="langs">Languages / Frameworks used:</p>
+                    <p class="lang-icons">React | JavaScript | Sass | APIs</p>
+                </div>
+                <div class="card-links">
+                    <a href="https://jdmcgrath.github.io/All-Jumbled-Up/" target="_blank"><i class="fas fa-rocket"></i></a>
+                    <a href="https://github.com/jdmcgrath/All-Jumbled-Up" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+          </div>
+        </div></section>
+
+    <!-- Page 4 -->
+    <section id="page-4">
+      <h2>CONTACT</h2>
+      <ul>
+        <a href="mailto:joseph.mcgrath@engineer.com" target="_blank"><li><i class="far fa-envelope"></i></li></a>
+        <a href="https://www.linkedin.com/in/joseph-daniel-mcgrath/" target="_blank"><li><i class="fab fa-linkedin"></i></li></a>
+      </ul>
+    </section>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </body>
+</html>
+ 
+
+
