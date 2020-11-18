@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran&display=swap");
 .button {
   border: 2px solid #fff;
   background-color: transparent;
@@ -565,6 +566,18 @@ html {
   height: 100vh;
 }
 
+.portfolio-grid {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.face {
+  height: 250px;
+  width: 400px;
+}
+
 @media (min-width: 560px) {
   h1 {
     font-size: 55px;
@@ -581,16 +594,6 @@ html {
   }
   .column .dot i {
     font-size: 10vw;
-  }
-  .portfolio-grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-  }
-  .face {
-    height: 250px;
-    width: 400px;
   }
 }
 

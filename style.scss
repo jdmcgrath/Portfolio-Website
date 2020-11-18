@@ -24,6 +24,16 @@ html {
 	height: 100vh;
 }
 
+.portfolio-grid {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+.face {
+	height: 250px;
+	width: 400px;
+}
+
 // Making the site responsive to viewport size
 
 @media (min-width: 560px) {
@@ -45,15 +55,6 @@ html {
 				font-size: 10vw;
 			}
 		}
-	}
-	.portfolio-grid {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
-	}
-
-	.face {
-		height: 250px;
-		width: 400px;
 	}
 }
 
