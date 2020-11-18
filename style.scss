@@ -1,19 +1,19 @@
-@import "./scss/components/buttons";
-@import "./scss/layout/nav";
-@import "./scss/base/typography";
-@import "./scss/layout/grid";
-@import "./scss/pages/page-1";
-@import "./scss/pages/page-2";
-@import "./scss/pages/page-3";
-@import "./scss/pages/page-4";
-@import "./scss/components/chart";
+@import './scss/components/buttons';
+@import './scss/layout/nav';
+@import './scss/base/typography';
+@import './scss/layout/grid';
+@import './scss/pages/page-1';
+@import './scss/pages/page-2';
+@import './scss/pages/page-3';
+@import './scss/pages/page-4';
+@import './scss/components/chart';
 
 /* Set font and reset margin & padding to be set */
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 html {

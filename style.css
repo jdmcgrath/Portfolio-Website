@@ -262,6 +262,14 @@ h3 {
   background-image: url(./img/Morse.png);
 }
 
+.card_5 {
+  background-image: url(./img/Morse.png);
+}
+
+.card_6 {
+  background-image: url(./img/bookfinder.png);
+}
+
 .card {
   border-radius: 20px;
   background-color: rgba(37, 41, 52, 0.1);
@@ -546,7 +554,7 @@ h3 {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html {
