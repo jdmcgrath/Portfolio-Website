@@ -29,14 +29,20 @@ html {
 	grid-template-rows: auto;
 }
 
-.face {
-	height: 250px;
-	width: 400px;
-}
-
 // Making the site responsive to viewport size
 
 @media (min-width: 560px) {
+	#welcome-message {
+		left:55%
+	}
+
+	.face {
+		width: 400px;
+	}
+	.face1{
+		height: 250px;
+	}
+	
 	h1 {
 		font-size: 55px;
 	}
@@ -115,7 +121,7 @@ html {
 	}
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1375px) {
 	h1 {
 		font-size: 80px;
 	}
