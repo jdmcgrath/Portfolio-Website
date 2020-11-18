@@ -11,7 +11,7 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 10vh;
 }
 
@@ -597,6 +597,9 @@ html {
   #welcome-message {
     left: 55%;
   }
+  .button {
+    font-size: 25px;
+  }
   .face {
     width: 400px;
   }
@@ -608,9 +611,6 @@ html {
   }
   .highlight {
     font-size: 65px;
-  }
-  .button {
-    font-size: 30px;
   }
   .column .dot {
     height: 18vw;
@@ -624,6 +624,9 @@ html {
 @media (min-width: 960px) {
   h1 {
     font-size: 65px;
+  }
+  .button {
+    font-size: 28px;
   }
   .highlight {
     font-size: 75px;
@@ -679,6 +682,9 @@ html {
 @media (min-width: 1375px) {
   h1 {
     font-size: 80px;
+  }
+  .button {
+    font-size: 30px;
   }
   .highlight {
     font-size: 90px;
