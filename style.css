@@ -76,6 +76,7 @@ nav {
   right: 0;
   top: 0;
   font-size: 3vh;
+  z-index: 1000;
 }
 
 h1,
@@ -223,6 +224,7 @@ h3 {
   margin: 0 auto;
   position: relative;
   background-color: #f5f5f5;
+  z-index: 1;
 }
 
 .projects-container {
@@ -255,7 +257,7 @@ h3 {
 }
 
 .card_3 {
-  background-image: url(./img/calculator.jpg);
+  background-image: url(./img/calculator.png);
 }
 
 .card_4 {
