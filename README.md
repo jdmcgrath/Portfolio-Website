@@ -3,6 +3,8 @@
 My portfolio is a show of my past works as a developer, written in HTML & using the CSS pre-processor SCSS.
 Whilst on the _nology bootcamp, I worked on various personal projects such an Angular-based book API, a react-based filterable beer list (useful for me), a JavaScript Quiz, and a morse code translator (could be useful to someone, someday!).
 
+### Tech
+
 This site uses the following languages & principles:
 
   - HTML
