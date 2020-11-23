@@ -6,6 +6,7 @@ Whilst on the _nology bootcamp, I worked on various personal projects such an An
 This site uses the following languages & principles:
 
   - HTML
+  - JavaScript
   - SCSS / CSS
   - 7-1 SASS Architecture
   - Firebase Hosting
