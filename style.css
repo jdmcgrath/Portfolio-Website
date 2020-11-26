@@ -31,14 +31,19 @@
 }
 
 nav {
+  position: absolute;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: transparent;
-  z-index: 1000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: bold;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -52,16 +57,11 @@ nav {
 
 .topnav #myLinks {
   display: none;
-  position: absolute;
   padding-top: 5vh;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .topnav a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-self: flex-end;
   color: #ababab;
   padding: 14px 16px;
   text-decoration: none;
@@ -72,7 +72,7 @@ nav {
 
 .topnav a:hover {
   text-decoration: underline;
-  color: white;
+  color: #04c2c9;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
@@ -82,6 +82,7 @@ nav {
   right: 0;
   top: 0;
   font-size: 3vh;
+  z-index: 1000;
 }
 
 h1,
@@ -164,6 +165,7 @@ h3 {
 
 .page-1 {
   height: 100vh;
+  z-index: -1;
 }
 
 #particles-js {
@@ -171,7 +173,6 @@ h3 {
   position: absolute;
   height: 100vh;
   width: 100%;
-  z-index: -1;
 }
 
 /* Format the welcome message */
@@ -290,11 +291,6 @@ h3 {
   height: auto;
 }
 
-.card-txt p {
-  color: grey;
-  font-size: 20px;
-}
-
 .card-txt .langs {
   margin-top: 20px;
   color: black;
@@ -315,7 +311,13 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 16px;
+  font-size: 15px;
+  color: grey;
+}
+
+.card-txt .cardDesc {
+  font-size: 15px;
+  color: grey;
 }
 
 .card-links {
@@ -356,6 +358,10 @@ h3 {
 .card-links a i {
   opacity: 1;
   font-size: 40px;
+}
+
+.cardTitle {
+  text-decoration: none;
 }
 
 .see_more {
@@ -419,8 +425,7 @@ h3 {
   margin: 20px 0 40px;
   color: #282828;
   width: 90%;
-  height: 486px;
-  margin: auto;
+  height: 400px;
   position: relative;
 }
 
@@ -493,11 +498,6 @@ h3 {
   opacity: 0;
   -webkit-animation: 1s anim-lightspeed-in ease forwards;
           animation: 1s anim-lightspeed-in ease forwards;
-}
-
-.chart--dev .chart__bar:nth-of-type(9) {
-  -webkit-animation-delay: 2.3s;
-          animation-delay: 2.3s;
 }
 
 .chart--dev .chart__bar:nth-of-type(8) {
@@ -673,6 +673,19 @@ html {
   .profile {
     -ms-grid-column: 1;
         grid-column-start: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .skills {
     -ms-grid-column: 2;

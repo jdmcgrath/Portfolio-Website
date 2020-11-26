@@ -29,7 +29,7 @@ html {
 
 @media (min-width: 560px) {
 	#welcome-message {
-		left:55%
+		left: 55%;
 	}
 
 	.button {
@@ -39,10 +39,10 @@ html {
 	.face {
 		width: 400px;
 	}
-	.face1{
+	.face1 {
 		height: 250px;
 	}
-	
+
 	h1 {
 		font-size: 55px;
 	}
@@ -111,6 +111,10 @@ html {
 
 	.profile {
 		grid-column-start: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+  justify-content: center;
 	}
 
 	.skills {
